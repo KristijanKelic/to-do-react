@@ -1,2 +1,2 @@
 # to-do-list
-Simple to do list for react &amp; redux practice.
+Simple TO DO app for react &amp; redux practice.
