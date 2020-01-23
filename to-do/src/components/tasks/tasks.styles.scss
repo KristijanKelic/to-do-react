@@ -11,7 +11,16 @@
 
     .number-of-tasks {
       color: #4b674a;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
+  }
+
+  .add-task {
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
   }
 }
