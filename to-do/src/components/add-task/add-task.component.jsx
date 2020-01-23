@@ -17,13 +17,12 @@ const AddTask = ({ history }) => {
 
   const handleChange = e => {
     const { value, name } = e.target;
-    console.log(value, name);
 
     setTaskData({ ...taskData, [name]: value });
   };
   return (
     <>
-      <form className="add-task-form">
+      <form className="add-task-form" onSubmit={handleSubmit}>
         <div className="input-group">
           <input
             type="text"
