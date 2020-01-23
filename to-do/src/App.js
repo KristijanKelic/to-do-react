@@ -1,7 +1,7 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import Header from './components/header/header.component';
-import InfoText from './components/info/info.component';
 import Tasks from './components/tasks/tasks.component';
 
 import './App.scss';
@@ -11,8 +11,10 @@ function App() {
     <>
       <Header />
       <div className="App">
-        <InfoText />
-        <Tasks />
+        <Switch>
+          <Route exact path="/" component={Tasks} />
+          <Route path="/add-task" component={''} />
+        </Switch>
       </div>
     </>
   );
