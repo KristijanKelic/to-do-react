@@ -2,11 +2,11 @@ import React from 'react';
 
 import './task.styles.scss';
 
-const Task = () => {
+const Task = ({ name, desc, done }) => {
   return (
     <div className="task">
       <div className="task-title">
-        <span>This must</span>
+        <span>{name}</span>
       </div>
       <div className="task-actions">
         <button>X</button>

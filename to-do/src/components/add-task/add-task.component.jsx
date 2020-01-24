@@ -1,18 +1,31 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import generateUniqueId from 'generate-unique-id';
+
+import { addTask } from '../../redux/tasks/tasks.actions';
 
 import { ReactComponent as Tasks } from '../../assets/list.svg';
 
 import './add-task.styles.scss';
 
-const AddTask = ({ history }) => {
+const AddTask = ({ history, addTask }) => {
   const [taskData, setTaskData] = useState({
-    task: '',
+    taskName: '',
     description: ''
   });
-
   const handleSubmit = e => {
     e.preventDefault();
-    // TO DO REDUX STORING
+    const { taskName, description } = taskData;
+    const task = {
+      id: generateUniqueId(),
+      taskName,
+      description,
+      done: false,
+      createdAt: new Date().toLocaleDateString(),
+      finishedAt: ''
+    };
+    addTask(task);
+    history.push('/');
   };
 
   const handleChange = e => {
@@ -26,15 +39,15 @@ const AddTask = ({ history }) => {
         <div className="input-group">
           <input
             type="text"
-            name="task"
+            name="taskName"
             className="form-input"
-            value={taskData.task}
+            value={taskData.taskName}
             onChange={handleChange}
             required
           />
           <label
             className={
-              taskData.task.length > 0
+              taskData.taskName.length > 0
                 ? 'form-input-label shrink'
                 : 'form-input-label'
             }
@@ -68,4 +81,8 @@ const AddTask = ({ history }) => {
   );
 };
 
-export default AddTask;
+const mapDispatchToProps = dispatch => ({
+  addTask: task => dispatch(addTask(task))
+});
+
+export default connect(null, mapDispatchToProps)(AddTask);
