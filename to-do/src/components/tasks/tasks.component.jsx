@@ -14,7 +14,7 @@ const Tasks = ({ history, tasks }) => {
       <div className="info-text">
         <span>
           You have
-          <span className="number-of-tasks">{unfinishedTasks.length}</span>{' '}
+          <span className="number-of-tasks"> {unfinishedTasks.length} </span>
           tasks left to do!
         </span>
       </div>

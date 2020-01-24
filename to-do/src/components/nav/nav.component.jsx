@@ -9,12 +9,17 @@ import './nav.styles.scss';
 const BottomNav = () => {
   return (
     <div className="bottom-nav">
-      <div className="nav-link">
-        <ToDoTasks className="icon"/>
-      </div>
-      <div className="nav-link">
-        <FinishedTasks className="icon"/>
-      </div>
+      <NavLink className="nav-link" to="/" exact activeClassName="active">
+        <ToDoTasks className="icon" />
+      </NavLink>
+      <NavLink
+        className="nav-link"
+        to="/finished-tasks"
+        activeClassName="active"
+        exact
+      >
+        <FinishedTasks className="icon" />
+      </NavLink>
     </div>
   );
 };

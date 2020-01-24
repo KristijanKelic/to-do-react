@@ -14,14 +14,14 @@
     padding: 1rem;
 
     &.active {
-        
+      background-color: #303f2e;
     }
   }
 
   .icon {
     @media (min-width: 768px) {
-        width: 32px;
-        height: 32px;
+      width: 32px;
+      height: 32px;
     }
     width: 16px;
     height: 16px;
