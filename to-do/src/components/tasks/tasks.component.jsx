@@ -9,12 +9,11 @@ import './tasks.styles.scss';
 
 const Tasks = ({ history, tasks }) => {
   const unfinishedTasks = tasks.filter(el => !el.done);
-  console.log(tasks);
   return (
     <div className="tasks-container">
       <div className="info-text">
         <span>
-          You have{' '}
+          You have
           <span className="number-of-tasks">{unfinishedTasks.length}</span>{' '}
           tasks left to do!
         </span>

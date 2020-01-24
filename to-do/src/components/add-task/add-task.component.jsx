@@ -4,11 +4,9 @@ import generateUniqueId from 'generate-unique-id';
 
 import { addTask } from '../../redux/tasks/tasks.actions';
 
-import { ReactComponent as Tasks } from '../../assets/list.svg';
-
 import './add-task.styles.scss';
 
-const AddTask = ({ history, addTask }) => {
+const AddTask = ({ addTask, history }) => {
   const [taskData, setTaskData] = useState({
     taskName: '',
     description: ''
@@ -76,7 +74,6 @@ const AddTask = ({ history, addTask }) => {
           <button className="submit-button">Submit</button>
         </div>
       </form>
-      <Tasks className="back-to-tasks" onClick={() => history.push('/')} />
     </>
   );
 };

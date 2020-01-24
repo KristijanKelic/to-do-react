@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './components/header/header.component';
 import Tasks from './components/tasks/tasks.component';
 import AddTask from './components/add-task/add-task.component';
+import BottomNav from './components/nav/nav.component';
 
 import './App.scss';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/add-task" component={AddTask} />
         </Switch>
       </div>
+      <BottomNav />
     </>
   );
 }
