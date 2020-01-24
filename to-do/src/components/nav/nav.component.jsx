@@ -11,6 +11,7 @@ const BottomNav = () => {
     <div className="bottom-nav">
       <NavLink className="nav-link" to="/" exact activeClassName="active">
         <ToDoTasks className="icon" />
+        <span>To do</span>
       </NavLink>
       <NavLink
         className="nav-link"
@@ -19,6 +20,7 @@ const BottomNav = () => {
         exact
       >
         <FinishedTasks className="icon" />
+        <span>Finished</span>
       </NavLink>
     </div>
   );
