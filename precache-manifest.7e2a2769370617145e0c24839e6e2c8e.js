@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd9401577bca120e2ede4cb7effc5364",
+    "revision": "10e82a2a34aa70e20314a63c2472df09",
     "url": "/to-do-react/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/to-do-react/static/css/2.627926fe.chunk.css"
   },
   {
-    "revision": "6fdc024aea08a822ec1b",
-    "url": "/to-do-react/static/css/main.03cc68ef.chunk.css"
+    "revision": "dc576ae4758e90662650",
+    "url": "/to-do-react/static/css/main.750bd371.chunk.css"
   },
   {
     "revision": "78fcdbb3b272ab1c21a9",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/to-do-react/static/js/2.ff908870.chunk.js.LICENSE"
   },
   {
-    "revision": "6fdc024aea08a822ec1b",
-    "url": "/to-do-react/static/js/main.8c11cbff.chunk.js"
+    "revision": "dc576ae4758e90662650",
+    "url": "/to-do-react/static/js/main.2bbff4ee.chunk.js"
   },
   {
     "revision": "1e161adf563a704d7b53",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/to-do-react/static/media/delete.4b8e8690.svg"
   },
   {
-    "revision": "327958fd2ef3c233783c12740c6ce372",
-    "url": "/to-do-react/static/media/information.327958fd.svg"
+    "revision": "9aef94cebb4153e69712951381ceeced",
+    "url": "/to-do-react/static/media/down-arrow.9aef94ce.svg"
   },
   {
     "revision": "65521e7a1bcf495869280e58b8a7ab82",
@@ -54,5 +54,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "870a5694b10e508084d7ae1a39c1f665",
     "url": "/to-do-react/static/media/undo.870a5694.svg"
+  },
+  {
+    "revision": "c28d9f7daba3e75dd87246748b01f102",
+    "url": "/to-do-react/static/media/up-arrow.c28d9f7d.svg"
   }
 ]);

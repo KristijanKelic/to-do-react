@@ -1,32 +1,33 @@
 {
   "files": {
-    "main.css": "/to-do-react/static/css/main.03cc68ef.chunk.css",
-    "main.js": "/to-do-react/static/js/main.8c11cbff.chunk.js",
-    "main.js.map": "/to-do-react/static/js/main.8c11cbff.chunk.js.map",
+    "main.css": "/to-do-react/static/css/main.750bd371.chunk.css",
+    "main.js": "/to-do-react/static/js/main.2bbff4ee.chunk.js",
+    "main.js.map": "/to-do-react/static/js/main.2bbff4ee.chunk.js.map",
     "runtime-main.js": "/to-do-react/static/js/runtime-main.2140ce8d.js",
     "runtime-main.js.map": "/to-do-react/static/js/runtime-main.2140ce8d.js.map",
     "static/css/2.627926fe.chunk.css": "/to-do-react/static/css/2.627926fe.chunk.css",
     "static/js/2.ff908870.chunk.js": "/to-do-react/static/js/2.ff908870.chunk.js",
     "static/js/2.ff908870.chunk.js.map": "/to-do-react/static/js/2.ff908870.chunk.js.map",
     "index.html": "/to-do-react/index.html",
-    "precache-manifest.b651151676f7d4485da0ef3709c2935e.js": "/to-do-react/precache-manifest.b651151676f7d4485da0ef3709c2935e.js",
+    "precache-manifest.7e2a2769370617145e0c24839e6e2c8e.js": "/to-do-react/precache-manifest.7e2a2769370617145e0c24839e6e2c8e.js",
     "service-worker.js": "/to-do-react/service-worker.js",
     "static/css/2.627926fe.chunk.css.map": "/to-do-react/static/css/2.627926fe.chunk.css.map",
-    "static/css/main.03cc68ef.chunk.css.map": "/to-do-react/static/css/main.03cc68ef.chunk.css.map",
+    "static/css/main.750bd371.chunk.css.map": "/to-do-react/static/css/main.750bd371.chunk.css.map",
     "static/js/2.ff908870.chunk.js.LICENSE": "/to-do-react/static/js/2.ff908870.chunk.js.LICENSE",
     "static/media/add.79404ac4.svg": "/to-do-react/static/media/add.79404ac4.svg",
     "static/media/delete.4b8e8690.svg": "/to-do-react/static/media/delete.4b8e8690.svg",
-    "static/media/information.327958fd.svg": "/to-do-react/static/media/information.327958fd.svg",
+    "static/media/down-arrow.9aef94ce.svg": "/to-do-react/static/media/down-arrow.9aef94ce.svg",
     "static/media/list.65521e7a.svg": "/to-do-react/static/media/list.65521e7a.svg",
     "static/media/tick.c0cbd084.svg": "/to-do-react/static/media/tick.c0cbd084.svg",
     "static/media/to-do-list.b5fa2cbc.svg": "/to-do-react/static/media/to-do-list.b5fa2cbc.svg",
-    "static/media/undo.870a5694.svg": "/to-do-react/static/media/undo.870a5694.svg"
+    "static/media/undo.870a5694.svg": "/to-do-react/static/media/undo.870a5694.svg",
+    "static/media/up-arrow.c28d9f7d.svg": "/to-do-react/static/media/up-arrow.c28d9f7d.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2140ce8d.js",
     "static/css/2.627926fe.chunk.css",
     "static/js/2.ff908870.chunk.js",
-    "static/css/main.03cc68ef.chunk.css",
-    "static/js/main.8c11cbff.chunk.js"
+    "static/css/main.750bd371.chunk.css",
+    "static/js/main.2bbff4ee.chunk.js"
   ]
 }
