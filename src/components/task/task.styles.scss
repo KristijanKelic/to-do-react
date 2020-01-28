@@ -3,54 +3,49 @@
   align-items: center;
   justify-content: space-between;
   border-top: 2px solid #4b674a;
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
   margin-bottom: 0.5rem;
   position: relative;
 
   .task-title {
-    flex-basis: 75%;
-    @media (min-width: 1025px) {
-      flex-basis: 85%;
-    }
+    flex-basis: 70%;
   }
 
   .task-actions {
-    flex-basis: 25%;
+    flex-basis: 30%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-
-    @media (min-width: 1025px) {
-      flex-basis: 15%;
-    }
   }
 
   .finish-action {
-    fill: white;
-    width: 1rem;
-    height: 1rem;
-    &:hover {
-      fill: #4b674a;
+    &-button {
+      border: 0;
+      border-radius: 40%;
+      padding: 0.5rem;
+      width: 50%;
+      background-color: #4b674a;
     }
-  }
-
-  .undo-action {
-    fill: white;
-    width: 1rem;
-    height: 1rem;
-
-    &:hover {
-      fill: #4b674a;
+    &-icon {
+      fill: white;
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 
   .info-action {
-    fill: white;
-    width: 1rem;
-    height: 1rem;
-    margin-left: 0.5rem;
-    :hover {
-      fill: #7aa4a9;
+    &-button {
+      border: 0;
+      padding: 0.5rem;
+      width: 50%;
+      border-radius: 40%;
+      background-color: transparent;
+    }
+
+    &-icon {
+      fill: white;
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 

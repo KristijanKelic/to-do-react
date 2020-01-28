@@ -25,37 +25,39 @@ const FinishedTasks = ({ finished, deleteFinishedTasks }) => {
         .map(task => (
           <Task task={task} key={task.id} />
         ))}
-      <Trash
-        className="remove"
-        onClick={() =>
-          confirmAlert({
-            customUI: ({ onClose }) => {
-              return (
-                <div>
-                  <h3 className="dialog-title">Delete finished tasks</h3>
-                  <p className="dialog-message">
-                    Are you sure you want to delete all fisnihed tasks?
-                  </p>
-                  <div className="dialog-buttons">
-                    <button
-                      className="btn-yes"
-                      onClick={() => {
-                        deleteFinishedTasks();
-                        onClose();
-                      }}
-                    >
-                      Yes
-                    </button>
-                    <button onClick={onClose} className="btn-no">
-                      No
-                    </button>
+      {finished.length > 0 ? (
+        <Trash
+          className="remove"
+          onClick={() =>
+            confirmAlert({
+              customUI: ({ onClose }) => {
+                return (
+                  <div>
+                    <h3 className="dialog-title">Delete finished tasks</h3>
+                    <p className="dialog-message">
+                      Are you sure you want to delete all fisnihed tasks?
+                    </p>
+                    <div className="dialog-buttons">
+                      <button
+                        className="btn-yes"
+                        onClick={() => {
+                          deleteFinishedTasks();
+                          onClose();
+                        }}
+                      >
+                        Yes
+                      </button>
+                      <button onClick={onClose} className="btn-no">
+                        No
+                      </button>
+                    </div>
                   </div>
-                </div>
-              );
-            }
-          })
-        }
-      ></Trash>
+                );
+              }
+            })
+          }
+        ></Trash>
+      ) : null}
     </div>
   );
 };

@@ -41,6 +41,7 @@ const AddTask = ({ addTask, history }) => {
             value={taskData.taskName}
             onChange={handleChange}
             required
+            autoComplete="off"
           />
           <label
             className={

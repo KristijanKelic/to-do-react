@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 import { markDone, markUndone } from '../../redux/tasks/tasks.actions';
 
 import { ReactComponent as Check } from '../../assets/tick.svg';
-import { ReactComponent as Info } from '../../assets/information.svg';
+import { ReactComponent as Expand } from '../../assets/down-arrow.svg';
 import { ReactComponent as Undo } from '../../assets/undo.svg';
+import { ReactComponent as Collapse } from '../../assets/up-arrow.svg';
 
 import './task.styles.scss';
 
@@ -19,14 +20,30 @@ const Task = ({ task, markDone, markUndone }) => {
         </div>
         <div className="task-actions">
           {task.finishedAt === '' ? (
-            <Check className="finish-action" onClick={() => markDone(task)} />
+            <button
+              className="finish-action-button"
+              onClick={() => markDone(task)}
+            >
+              <Check className="finish-action-icon" />
+            </button>
           ) : (
-            <Undo className="undo-action" onClick={() => markUndone(task)} />
+            <button
+              className="finish-action-button"
+              onClick={() => markUndone(task)}
+            >
+              <Undo className="finish-action-icon" />{' '}
+            </button>
           )}
-          <Info
-            className="info-action"
+          <button
+            className="info-action-button"
             onClick={() => setToggleDesc(!toggleDesc)}
-          />
+          >
+            {!toggleDesc ? (
+              <Expand className="info-action-icon" />
+            ) : (
+              <Collapse className="info-action-icon" />
+            )}
+          </button>
         </div>
         <span className="task-time">
           {task.finishedAt === ''
