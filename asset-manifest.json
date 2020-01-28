@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/KristijanKelic/to-do-react/static/css/main.03cc68ef.chunk.css",
+    "main.js": "/KristijanKelic/to-do-react/static/js/main.502bdc0d.chunk.js",
+    "main.js.map": "/KristijanKelic/to-do-react/static/js/main.502bdc0d.chunk.js.map",
+    "runtime-main.js": "/KristijanKelic/to-do-react/static/js/runtime-main.e704c9f0.js",
+    "runtime-main.js.map": "/KristijanKelic/to-do-react/static/js/runtime-main.e704c9f0.js.map",
+    "static/css/2.627926fe.chunk.css": "/KristijanKelic/to-do-react/static/css/2.627926fe.chunk.css",
+    "static/js/2.c61c0e9e.chunk.js": "/KristijanKelic/to-do-react/static/js/2.c61c0e9e.chunk.js",
+    "static/js/2.c61c0e9e.chunk.js.map": "/KristijanKelic/to-do-react/static/js/2.c61c0e9e.chunk.js.map",
+    "index.html": "/KristijanKelic/to-do-react/index.html",
+    "precache-manifest.f4053c656968003f7d2c3fa55cc19fb6.js": "/KristijanKelic/to-do-react/precache-manifest.f4053c656968003f7d2c3fa55cc19fb6.js",
+    "service-worker.js": "/KristijanKelic/to-do-react/service-worker.js",
+    "static/css/2.627926fe.chunk.css.map": "/KristijanKelic/to-do-react/static/css/2.627926fe.chunk.css.map",
+    "static/css/main.03cc68ef.chunk.css.map": "/KristijanKelic/to-do-react/static/css/main.03cc68ef.chunk.css.map",
+    "static/js/2.c61c0e9e.chunk.js.LICENSE": "/KristijanKelic/to-do-react/static/js/2.c61c0e9e.chunk.js.LICENSE",
+    "static/media/add.79404ac4.svg": "/KristijanKelic/to-do-react/static/media/add.79404ac4.svg",
+    "static/media/delete.4b8e8690.svg": "/KristijanKelic/to-do-react/static/media/delete.4b8e8690.svg",
+    "static/media/information.327958fd.svg": "/KristijanKelic/to-do-react/static/media/information.327958fd.svg",
+    "static/media/list.65521e7a.svg": "/KristijanKelic/to-do-react/static/media/list.65521e7a.svg",
+    "static/media/tick.c0cbd084.svg": "/KristijanKelic/to-do-react/static/media/tick.c0cbd084.svg",
+    "static/media/to-do-list.b5fa2cbc.svg": "/KristijanKelic/to-do-react/static/media/to-do-list.b5fa2cbc.svg",
+    "static/media/undo.870a5694.svg": "/KristijanKelic/to-do-react/static/media/undo.870a5694.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e704c9f0.js",
+    "static/css/2.627926fe.chunk.css",
+    "static/js/2.c61c0e9e.chunk.js",
+    "static/css/main.03cc68ef.chunk.css",
+    "static/js/main.502bdc0d.chunk.js"
+  ]
+}
