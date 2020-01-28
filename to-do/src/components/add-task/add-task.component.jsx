@@ -18,7 +18,6 @@ const AddTask = ({ addTask, history }) => {
       id: generateUniqueId(),
       taskName,
       description,
-      done: false,
       createdAt: new Date().toLocaleDateString(),
       finishedAt: ''
     };

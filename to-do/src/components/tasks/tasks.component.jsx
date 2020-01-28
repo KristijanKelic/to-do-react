@@ -8,23 +8,17 @@ import { ReactComponent as Add } from '../../assets/add.svg';
 import './tasks.styles.scss';
 
 const Tasks = ({ history, tasks }) => {
-  const unfinishedTasks = tasks.filter(el => !el.done);
   return (
     <div className="tasks-container">
       <div className="info-text">
         <span>
-          You have
-          <span className="number-of-tasks"> {unfinishedTasks.length} </span>
-          tasks left to do!
+          TO DO:
+          <span className="number-of-tasks"> {tasks.length} </span>
+          task(s)
         </span>
       </div>
       {tasks.map(task => (
-        <Task
-          name={task.taskName}
-          desc={task.description}
-          done={task.done}
-          key={task.id}
-        />
+        <Task task={task} key={task.id} />
       ))}
       <Add className="add-task" onClick={() => history.push('/add-task')} />
     </div>

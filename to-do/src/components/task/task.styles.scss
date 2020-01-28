@@ -5,15 +5,71 @@
   border-top: 2px solid #4b674a;
   padding: 1rem;
   margin-bottom: 0.5rem;
+  position: relative;
 
   .task-title {
-    flex-basis: 82%;
+    flex-basis: 75%;
+    @media (min-width: 1025px) {
+      flex-basis: 85%;
+    }
   }
 
   .task-actions {
-    flex-basis: 18%;
+    flex-basis: 25%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
+
+    @media (min-width: 1025px) {
+      flex-basis: 15%;
+    }
+  }
+
+  .finish-action {
+    fill: white;
+    width: 16px;
+    height: 16px;
+  }
+
+  .finish-action:hover {
+    fill: #4b674a;
+  }
+
+  .info-action {
+    fill: white;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+  }
+
+  .info-action:hover {
+    fill: #7aa4a9;
+  }
+
+  .task-time {
+    position: absolute;
+    display: block;
+    font-size: 0.7rem;
+    color: gray;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.toggle-description {
+  transform: scaleY(0);
+  transition: transform 0.2s ease-in;
+  height: 0;
+
+  &-visible {
+    transform: scaleY(1);
+    transition: transform 0.2s ease-out;
+    height: auto;
+  }
+
+  &-text {
+    word-wrap: break-word;
+    margin-left: 1rem;
+    font-style: italic;
   }
 }

@@ -3,6 +3,12 @@
   grid-template-columns: 100%;
   margin-top: 1rem;
 
+  padding: 10px;
+
+  @media (min-width: 1025px) {
+    padding: 20px 60px;
+  }
+
   .info-text {
     font-size: 1.2rem;
     margin: 0 auto;
@@ -20,7 +26,7 @@
     position: absolute;
     @media (min-width: 768px) {
       bottom: 6rem;
-  }
+    }
     bottom: 4rem;
     right: 0;
     left: 0;
