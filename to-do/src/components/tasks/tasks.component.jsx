@@ -17,9 +17,11 @@ const Tasks = ({ history, tasks }) => {
           task(s)
         </span>
       </div>
-      {tasks.map(task => (
-        <Task task={task} key={task.id} />
-      ))}
+      {tasks
+        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+        .map(task => (
+          <Task task={task} key={task.id} />
+        ))}
       <Add className="add-task" onClick={() => history.push('/add-task')} />
     </div>
   );

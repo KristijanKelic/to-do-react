@@ -1,0 +1,68 @@
+.tasks-container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 1rem;
+
+  padding: 10px;
+
+  @media (min-width: 1025px) {
+    padding: 20px 60px;
+  }
+
+  .info-text {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    .number-of-tasks {
+      color: #4b674a;
+      font-size: 2rem;
+    }
+  }
+  .remove {
+    cursor: pointer;
+    position: fixed;
+    fill: #a5131d;
+    @media (min-width: 768px) {
+      bottom: 6rem;
+    }
+    bottom: 4rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .btn-yes {
+    background-color: #a5131d;
+    padding: 1rem;
+    border: 0;
+    width: 30%;
+    color: white;
+  }
+
+  .btn-no {
+    background-color: #4b674a;
+    padding: 1rem;
+    border: 0;
+    color: white;
+    width: 30%;
+  }
+}
+
+.dialog-title {
+  color: black;
+  text-align: center;
+}
+
+.dialog-message {
+  color: gray;
+  text-align: center;
+}

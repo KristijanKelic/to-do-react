@@ -27,12 +27,21 @@
 
   .finish-action {
     fill: white;
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
+    &:hover {
+      fill: #4b674a;
+    }
   }
 
-  .finish-action:hover {
-    fill: #4b674a;
+  .undo-action {
+    fill: white;
+    width: 1rem;
+    height: 1rem;
+
+    &:hover {
+      fill: #4b674a;
+    }
   }
 
   .info-action {
@@ -40,10 +49,9 @@
     width: 1rem;
     height: 1rem;
     margin-left: 0.5rem;
-  }
-
-  .info-action:hover {
-    fill: #7aa4a9;
+    :hover {
+      fill: #7aa4a9;
+    }
   }
 
   .task-time {

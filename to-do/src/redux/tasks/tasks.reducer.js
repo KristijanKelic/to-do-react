@@ -1,5 +1,9 @@
 import { TasksActionTypes } from './tasks.types';
-import { addTaskUtil, markTaskFinishedUtil } from './tasks.utils';
+import {
+  addTaskUtil,
+  markTaskFinishedUtil,
+  markTaskUnfinishedUtil
+} from './tasks.utils';
 
 const INITIAL_STATE = {
   tasks: [],
@@ -17,6 +21,16 @@ const tasksReducer = (state = INITIAL_STATE, action) => {
       return {
         ...state,
         ...markTaskFinishedUtil(action.payload, state.tasks, state.finished)
+      };
+    case TasksActionTypes.UNMARK_TASK_FINISHED:
+      return {
+        ...state,
+        ...markTaskUnfinishedUtil(action.payload, state.tasks, state.finished)
+      };
+    case TasksActionTypes.DELETE_FINISHED_TASKS:
+      return {
+        ...state,
+        finished: []
       };
     default:
       return state;

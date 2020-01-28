@@ -10,9 +10,8 @@ export const markDone = task => ({
   payload: task
 });
 
-export const deleteTask = task => ({
-  type: TasksActionTypes.DELETE_TASK,
-  payload: task
+export const deleteFinishedTasks = () => ({
+  type: TasksActionTypes.DELETE_FINISHED_TASKS
 });
 
 export const markUndone = task => ({
