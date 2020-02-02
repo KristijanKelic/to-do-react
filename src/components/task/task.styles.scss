@@ -52,7 +52,6 @@
     }
 
     &-icon-rotate {
-      transition: all 0.2s linear;
       transform: rotate(-180deg);
     }
   }
@@ -69,7 +68,7 @@
 
 .toggle-description {
   transform: scale(0);
-  transition: all 0.2s linear;
+  transition: all 0.25s linear;
   height: 0;
 
   &-visible {

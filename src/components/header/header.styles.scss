@@ -4,12 +4,42 @@
   height: 4.375rem;
   background-color: #063e66;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   .title {
     font-size: 2rem;
     margin: 0;
     margin-left: 1rem;
     font-family: 'Monoton', cursive;
+  }
+
+  .nav-links {
+    @media (max-width: 768px) {
+      display: none;
+    }
+    height: 100%;
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin: 0;
+      height: 100%;
+    }
+
+    .links {
+      height: 100%;
+      margin: 0 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: gray;
+      text-decoration: none;
+    }
+
+    .active {
+      border-bottom: 1px solid white;
+      color: white;
+    }
   }
 }
