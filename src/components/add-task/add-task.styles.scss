@@ -1,7 +1,7 @@
 @mixin shrinkLabel {
   top: -14px;
   font-size: 12px;
-  color: #4b674a;
+  color: #063e66;
 }
 
 .submit-button {
@@ -9,7 +9,7 @@
   position: relative;
   right: 0;
   padding: 0.5rem;
-  background-color: #4b674a;
+  background-color: #063e66;
   color: white;
   text-transform: uppercase;
   border: 0;
@@ -29,12 +29,12 @@
     width: 100%;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid #4b674a;
+    border-bottom: 1px solid #063e66;
     margin: 25px 0;
 
     &:focus {
       outline: none;
-      border-bottom: 1px solid #4b674a;
+      border-bottom: 1px solid #063e66;
     }
 
     &:focus ~ .form-input-label {

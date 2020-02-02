@@ -12,11 +12,11 @@ import './finished-tasks.styles.scss';
 
 const FinishedTasks = ({ finished, deleteFinishedTasks }) => {
   return (
-    <div className="tasks-container">
-      <div className="info-text">
+    <div className="finished-tasks-container">
+      <div className="finished-info-text">
         <span>
           DONE:
-          <span className="number-of-tasks"> {finished.length} </span>
+          <span className="number-of-finished"> {finished.length} </span>
           task(s)
         </span>
       </div>

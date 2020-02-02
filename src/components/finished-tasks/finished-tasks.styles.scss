@@ -1,4 +1,4 @@
-.tasks-container {
+.finished-tasks-container {
   display: grid;
   grid-template-columns: 100%;
   margin-top: 1rem;
@@ -9,14 +9,14 @@
     padding: 20px 60px;
   }
 
-  .info-text {
+  .finished-info-text {
     font-size: 1.2rem;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 1rem;
 
-    .number-of-tasks {
-      color: #4b674a;
+    .number-of-finished {
+      color: #063e66;
       font-size: 2rem;
     }
   }
@@ -49,7 +49,7 @@
   }
 
   .btn-no {
-    background-color: #4b674a;
+    background-color: #063e66;
     padding: 1rem;
     border: 0;
     color: white;

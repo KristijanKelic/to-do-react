@@ -11,13 +11,13 @@
     align-items: center;
     flex-basis: 50%;
     flex-direction: column;
-    background-color: #4b674a;
+    background-color: #063e66;
     color: gray;
     text-decoration: none;
     padding-top: 0.35rem;
 
     &.active {
-      background-color: #303f2e;
+      background-color: #063e66;
       border-top: 2px solid white;
       color: white;
     }

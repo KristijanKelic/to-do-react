@@ -6,7 +6,6 @@ import { markDone, markUndone } from '../../redux/tasks/tasks.actions';
 import { ReactComponent as Check } from '../../assets/tick.svg';
 import { ReactComponent as Expand } from '../../assets/down-arrow.svg';
 import { ReactComponent as Undo } from '../../assets/undo.svg';
-import { ReactComponent as Collapse } from '../../assets/up-arrow.svg';
 
 import './task.styles.scss';
 
@@ -38,11 +37,13 @@ const Task = ({ task, markDone, markUndone }) => {
             className="info-action-button"
             onClick={() => setToggleDesc(!toggleDesc)}
           >
-            {!toggleDesc ? (
-              <Expand className="info-action-icon" />
-            ) : (
-              <Collapse className="info-action-icon" />
-            )}
+            <Expand
+              className={
+                !toggleDesc
+                  ? 'info-action-icon'
+                  : 'info-action-icon info-action-icon-rotate'
+              }
+            />
           </button>
         </div>
         <span className="task-time">
@@ -53,7 +54,9 @@ const Task = ({ task, markDone, markUndone }) => {
       </div>
       <div
         className={
-          toggleDesc ? 'toggle-description-visible' : 'toggle-description'
+          toggleDesc
+            ? 'toggle-description toggle-description-visible'
+            : 'toggle-description'
         }
       >
         <p className="toggle-description-text">{task.description}</p>

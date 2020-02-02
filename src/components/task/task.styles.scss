@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 2px solid #4b674a;
+  border-top: 2px solid #063e66;
   padding: 1rem 0 1rem 1rem;
   margin-bottom: 0.5rem;
   position: relative;
@@ -21,15 +21,16 @@
   .finish-action {
     &-button {
       border: 0;
-      border-radius: 40%;
+      border-radius: 50%;
       padding: 0.5rem;
       width: 50%;
-      background-color: #4b674a;
+      background-color: #063e66;
     }
     &-icon {
       fill: white;
       width: 1.5rem;
       height: 1.5rem;
+      cursor: pointer;
     }
   }
 
@@ -46,6 +47,13 @@
       fill: white;
       width: 1.5rem;
       height: 1.5rem;
+      cursor: pointer;
+      transition: all 0.2s linear;
+    }
+
+    &-icon-rotate {
+      transition: all 0.2s linear;
+      transform: rotate(-180deg);
     }
   }
 
@@ -60,13 +68,12 @@
 }
 
 .toggle-description {
-  transform: scaleY(0);
-  transition: transform 0.2s ease-in;
+  transform: scale(0);
+  transition: all 0.2s linear;
   height: 0;
 
   &-visible {
-    transform: scaleY(1);
-    transition: transform 0.2s ease-out;
+    transform: scale(1);
     height: auto;
   }
 
