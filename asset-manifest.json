@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/to-do-react/static/css/main.098211db.chunk.css",
-    "main.js": "/to-do-react/static/js/main.0e5a31df.chunk.js",
-    "main.js.map": "/to-do-react/static/js/main.0e5a31df.chunk.js.map",
+    "main.css": "/to-do-react/static/css/main.a5c713f1.chunk.css",
+    "main.js": "/to-do-react/static/js/main.410f0079.chunk.js",
+    "main.js.map": "/to-do-react/static/js/main.410f0079.chunk.js.map",
     "runtime-main.js": "/to-do-react/static/js/runtime-main.2140ce8d.js",
     "runtime-main.js.map": "/to-do-react/static/js/runtime-main.2140ce8d.js.map",
     "static/css/2.627926fe.chunk.css": "/to-do-react/static/css/2.627926fe.chunk.css",
     "static/js/2.ff908870.chunk.js": "/to-do-react/static/js/2.ff908870.chunk.js",
     "static/js/2.ff908870.chunk.js.map": "/to-do-react/static/js/2.ff908870.chunk.js.map",
     "index.html": "/to-do-react/index.html",
-    "precache-manifest.17b006102c033bb844e05079ed55c642.js": "/to-do-react/precache-manifest.17b006102c033bb844e05079ed55c642.js",
+    "precache-manifest.875e72628ff4fbcb977b2c1a35a87542.js": "/to-do-react/precache-manifest.875e72628ff4fbcb977b2c1a35a87542.js",
     "service-worker.js": "/to-do-react/service-worker.js",
     "static/css/2.627926fe.chunk.css.map": "/to-do-react/static/css/2.627926fe.chunk.css.map",
-    "static/css/main.098211db.chunk.css.map": "/to-do-react/static/css/main.098211db.chunk.css.map",
+    "static/css/main.a5c713f1.chunk.css.map": "/to-do-react/static/css/main.a5c713f1.chunk.css.map",
     "static/js/2.ff908870.chunk.js.LICENSE": "/to-do-react/static/js/2.ff908870.chunk.js.LICENSE",
     "static/media/add.79404ac4.svg": "/to-do-react/static/media/add.79404ac4.svg",
     "static/media/delete.4b8e8690.svg": "/to-do-react/static/media/delete.4b8e8690.svg",
@@ -20,14 +20,13 @@
     "static/media/list.65521e7a.svg": "/to-do-react/static/media/list.65521e7a.svg",
     "static/media/tick.c0cbd084.svg": "/to-do-react/static/media/tick.c0cbd084.svg",
     "static/media/to-do-list.b5fa2cbc.svg": "/to-do-react/static/media/to-do-list.b5fa2cbc.svg",
-    "static/media/undo.870a5694.svg": "/to-do-react/static/media/undo.870a5694.svg",
-    "static/media/up-arrow.c28d9f7d.svg": "/to-do-react/static/media/up-arrow.c28d9f7d.svg"
+    "static/media/undo.870a5694.svg": "/to-do-react/static/media/undo.870a5694.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2140ce8d.js",
     "static/css/2.627926fe.chunk.css",
     "static/js/2.ff908870.chunk.js",
-    "static/css/main.098211db.chunk.css",
-    "static/js/main.0e5a31df.chunk.js"
+    "static/css/main.a5c713f1.chunk.css",
+    "static/js/main.410f0079.chunk.js"
   ]
 }
