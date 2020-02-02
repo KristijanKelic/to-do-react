@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/to-do-react/static/css/main.a5c713f1.chunk.css",
-    "main.js": "/to-do-react/static/js/main.5aff9b14.chunk.js",
-    "main.js.map": "/to-do-react/static/js/main.5aff9b14.chunk.js.map",
+    "main.css": "/to-do-react/static/css/main.8702bd9e.chunk.css",
+    "main.js": "/to-do-react/static/js/main.3554b954.chunk.js",
+    "main.js.map": "/to-do-react/static/js/main.3554b954.chunk.js.map",
     "runtime-main.js": "/to-do-react/static/js/runtime-main.2140ce8d.js",
     "runtime-main.js.map": "/to-do-react/static/js/runtime-main.2140ce8d.js.map",
     "static/css/2.627926fe.chunk.css": "/to-do-react/static/css/2.627926fe.chunk.css",
-    "static/js/2.ff908870.chunk.js": "/to-do-react/static/js/2.ff908870.chunk.js",
-    "static/js/2.ff908870.chunk.js.map": "/to-do-react/static/js/2.ff908870.chunk.js.map",
+    "static/js/2.7876de0d.chunk.js": "/to-do-react/static/js/2.7876de0d.chunk.js",
+    "static/js/2.7876de0d.chunk.js.map": "/to-do-react/static/js/2.7876de0d.chunk.js.map",
     "index.html": "/to-do-react/index.html",
-    "precache-manifest.359a579fe5a2ec7bd45ac008879d0e40.js": "/to-do-react/precache-manifest.359a579fe5a2ec7bd45ac008879d0e40.js",
+    "precache-manifest.acb8476a3258ed24cb0f826be08ba12a.js": "/to-do-react/precache-manifest.acb8476a3258ed24cb0f826be08ba12a.js",
     "service-worker.js": "/to-do-react/service-worker.js",
     "static/css/2.627926fe.chunk.css.map": "/to-do-react/static/css/2.627926fe.chunk.css.map",
-    "static/css/main.a5c713f1.chunk.css.map": "/to-do-react/static/css/main.a5c713f1.chunk.css.map",
-    "static/js/2.ff908870.chunk.js.LICENSE": "/to-do-react/static/js/2.ff908870.chunk.js.LICENSE",
+    "static/css/main.8702bd9e.chunk.css.map": "/to-do-react/static/css/main.8702bd9e.chunk.css.map",
+    "static/js/2.7876de0d.chunk.js.LICENSE": "/to-do-react/static/js/2.7876de0d.chunk.js.LICENSE",
     "static/media/add.79404ac4.svg": "/to-do-react/static/media/add.79404ac4.svg",
     "static/media/delete.4b8e8690.svg": "/to-do-react/static/media/delete.4b8e8690.svg",
     "static/media/down-arrow.9aef94ce.svg": "/to-do-react/static/media/down-arrow.9aef94ce.svg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.2140ce8d.js",
     "static/css/2.627926fe.chunk.css",
-    "static/js/2.ff908870.chunk.js",
-    "static/css/main.a5c713f1.chunk.css",
-    "static/js/main.5aff9b14.chunk.js"
+    "static/js/2.7876de0d.chunk.js",
+    "static/css/main.8702bd9e.chunk.css",
+    "static/js/main.3554b954.chunk.js"
   ]
 }
