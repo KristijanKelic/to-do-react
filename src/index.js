@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import * as serviceWorker from './serviceWorker';
@@ -12,11 +11,9 @@ import { store, persistor } from './redux/store';
 
 ReactDOM.render(
   <Provider store={store}>
-    <HashRouter>
       <PersistGate loading={null} persistor={persistor}>
         <App />
       </PersistGate>
-    </HashRouter>
   </Provider>,
   document.getElementById('root')
 );

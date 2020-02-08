@@ -6,29 +6,24 @@ import { addTask } from '../../redux/tasks/tasks.actions';
 
 import './add-task.styles.scss';
 
-const AddTask = ({ addTask, history }) => {
-  const [taskData, setTaskData] = useState({
-    taskName: '',
-    description: ''
-  });
+const AddTask = ({ addTask }) => {
+  const [task, setTask] = useState('');
   const handleSubmit = e => {
     e.preventDefault();
-    const { taskName, description } = taskData;
-    const task = {
+    if (task.trim() === '') {
+      return;
+    }
+    const taskObj = {
       id: generateUniqueId(),
-      taskName,
-      description,
-      createdAt: new Date(),
-      finishedAt: ''
+      task,
+      createdAt: new Date()
     };
-    addTask(task);
-    history.push('/');
+    setTask('');
+    addTask(taskObj);
   };
 
   const handleChange = e => {
-    const { value, name } = e.target;
-
-    setTaskData({ ...taskData, [name]: value });
+    setTask(e.target.value);
   };
   return (
     <>
@@ -38,40 +33,24 @@ const AddTask = ({ addTask, history }) => {
             type="text"
             name="taskName"
             className="form-input"
-            value={taskData.taskName}
+            value={task}
             onChange={handleChange}
             required
             autoComplete="off"
           />
           <label
             className={
-              taskData.taskName.length > 0
-                ? 'form-input-label shrink'
-                : 'form-input-label'
+              task.length > 0 ? 'form-input-label shrink' : 'form-input-label'
             }
           >
             Task
           </label>
         </div>
-        <div className="input-group">
-          <textarea
-            className="form-input"
-            name="description"
-            value={taskData.description}
-            onChange={handleChange}
-          ></textarea>
-          <label
-            className={
-              taskData.description.length > 0
-                ? 'form-input-label shrink'
-                : 'form-input-label'
-            }
-          >
-            Description
-          </label>
-        </div>
         <div className="button-container">
-          <button className="submit-button">Submit</button>
+          <button type="submit" className="add-button draw-border">
+            <span className="btn-text">Add</span>
+            <span className="check-mark">✔</span>
+          </button>
         </div>
       </form>
     </>

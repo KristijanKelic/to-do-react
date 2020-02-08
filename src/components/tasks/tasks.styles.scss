@@ -1,35 +1,17 @@
 .tasks-container {
-  display: grid;
-  grid-template-columns: 100%;
-  margin-top: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
 
-  padding: 10px;
-
-  @media (min-width: 1025px) {
-    padding: 20px 60px;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin: 0;
   }
 
-  .info-text {
-    font-size: 1.2rem;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 1rem;
-
-    .number-of-tasks {
-      color: #063e66;
-      font-size: 2rem;
-    }
-  }
-
-  .add-task {
-    cursor: pointer;
-    position: fixed;
-    bottom: 6rem;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    width: 2.5rem;
-    height: 2.5rem;
-    fill: #063e66;
+  li {
+      flex-basis: 100%;
+      word-wrap: break-word;
   }
 }

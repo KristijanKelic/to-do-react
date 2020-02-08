@@ -1,65 +1,135 @@
+$mainGreen: #117722;
+
 @mixin shrinkLabel {
-  top: -14px;
+  top: 5px;
   font-size: 12px;
-  color: #063e66;
+  color: $mainGreen;
 }
 
-.submit-button {
-  width: 25%;
-  position: relative;
-  right: 0;
-  padding: 0.5rem;
-  background-color: #063e66;
-  color: white;
-  text-transform: uppercase;
-  border: 0;
-}
-
-.input-group {
-  position: relative;
-  margin: 45px 0;
-
-  .form-input {
-    background: none;
-    background-color: #1c1c1e;
-    color: white;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid #063e66;
-    margin: 25px 0;
-
-    &:focus {
-      outline: none;
-      border-bottom: 1px solid #063e66;
-    }
-
-    &:focus ~ .form-input-label {
-      @include shrinkLabel();
-    }
-  }
-
-  .form-input-label {
-    color: white;
-    font-size: 16px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 300ms ease all;
-
-    &.shrink {
-      @include shrinkLabel();
-    }
-  }
-}
-
-.button-container {
-  width: 100%;
+.add-task-form {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 2.5rem auto;
+  padding: 0 2rem;
+
+  .button-container {
+    flex-basis: 25%;
+    height: 100%;
+    .add-button {
+      background: none;
+      border: 0;
+      box-sizing: border-box;
+      width: 100%;
+      color: #1c1c1c;
+      box-shadow: inset 0 0 0 2px white;
+      padding: 0.25rem;
+      position: relative;
+      vertical-align: middle;
+      font-weight: 700;
+
+      &::before,
+      &::after {
+        box-sizing: inherit;
+        content: '';
+        position: absolute;
+      }
+
+      &::before,
+      &::after {
+        border: 2px solid transparent;
+        width: 0;
+        height: 0;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+      }
+
+      &::after {
+        bottom: 0;
+        right: 0;
+      }
+
+      &:focus {
+        color: $mainGreen;
+      }
+      .check-mark {
+        opacity: 0;
+        transition: opacity 0.5s ease-in 1s;
+      }
+
+      &:focus::before,
+      &:focus::after {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:focus .check-mark {
+        opacity: 1;
+      }
+      &:focus .btn-text {
+        display: none;
+      }
+
+      &:focus::before {
+        border-top-color: $mainGreen;
+        border-right-color: $mainGreen;
+        border-radius: 25px;
+        transition: width 0.25s ease-out, height 0.25s ease-out 0.25s,
+          border-radius 0.1s linear 1s;
+      }
+
+      &:focus::after {
+        border-bottom-color: $mainGreen;
+        border-left-color: $mainGreen;
+        border-radius: 25px;
+        transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+          height 0.25s ease-out 0.75s, border-radius 0.1s linear 1s;
+      }
+    }
+  }
+
+  .input-group {
+    position: relative;
+    flex-basis: 70%;
+
+    .form-input {
+      background: none;
+      font-size: 18px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 0;
+      border-bottom: 1px solid $mainGreen;
+      margin: 25px 0;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $mainGreen;
+      }
+
+      &:focus ~ .form-input-label {
+        @include shrinkLabel();
+      }
+    }
+
+    .form-input-label {
+      color: $mainGreen;
+      font-size: 16px;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 5px;
+      top: 20px;
+      transition: 300ms ease all;
+
+      &.shrink {
+        @include shrinkLabel();
+      }
+    }
+  }
 }
