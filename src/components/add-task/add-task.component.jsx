@@ -48,7 +48,7 @@ const AddTask = ({ addTask }) => {
         </div>
         <div className="button-container">
           <button type="submit" className="add-button draw-border">
-            <span className="check-mark">✔</span>
+            <span className="check-mark">&#x2713;</span>
             <span className="btn-text">Add</span>
           </button>
         </div>

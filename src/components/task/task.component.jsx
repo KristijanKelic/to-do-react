@@ -19,9 +19,9 @@ const Task = () => {
           <span className="task-title">Something important to do</span>
         </div>
       </label>
-      {/* <div className="delete">
+      <div className="delete">
         <Delete className="icon" />
-      </div> */}
+      </div>
     </div>
   );
 };

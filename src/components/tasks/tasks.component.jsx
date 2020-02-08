@@ -8,14 +8,8 @@ import './tasks.styles.scss';
 const Tasks = () => {
   return (
     <div className="tasks-container">
-      <ul>
-        <li>
-          <Task />
-        </li>
-        <li>
-          <Task />
-        </li>
-      </ul>
+      <Task />
+      <Task />
     </div>
   );
 };

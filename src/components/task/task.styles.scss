@@ -2,6 +2,12 @@ $mainGreen: #117722;
 
 .task-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  border-bottom: 1px solid #ccc;
 
   .task {
     width: 100%;
@@ -12,10 +18,14 @@ $mainGreen: #117722;
   }
 
   label {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     padding: 0 10px;
     width: 100%;
+    flex-basis: calc(100% - 64px);
+    height: 100%;
   }
 
   .hidden-real-check {
@@ -78,7 +88,8 @@ $mainGreen: #117722;
     }
 
     &::after {
-      content: '✔';
+      content: '✓';
+      color: $mainGreen;
       position: absolute;
       top: 0;
       left: 2px;
@@ -87,7 +98,6 @@ $mainGreen: #117722;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: $mainGreen;
       transform: scale(0);
       transition: 0.4s;
     }
@@ -182,19 +192,21 @@ $mainGreen: #117722;
     }
   }
 
-  /* .delete {
-    flex-basis: 15%;
+  .delete {
+    margin: 0;
+    flex-basis: 64px;
     width: 100%;
+    height: 32px;
     background-color: rgba(255, 0, 0, 0.2);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    height: 100%;
   }
 
   .delete .icon {
     fill: red;
-    width: 1rem;
-    height: 1rem;
-  } */
+    width: 16px;
+    height: 16px;
+  }
 }
