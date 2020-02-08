@@ -48,8 +48,8 @@ const AddTask = ({ addTask }) => {
         </div>
         <div className="button-container">
           <button type="submit" className="add-button draw-border">
-            <span className="btn-text">Add</span>
             <span className="check-mark">✔</span>
+            <span className="btn-text">Add</span>
           </button>
         </div>
       </form>

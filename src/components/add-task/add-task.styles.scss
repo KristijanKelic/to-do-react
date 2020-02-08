@@ -12,11 +12,10 @@ $mainGreen: #117722;
   align-items: center;
   max-width: 800px;
   min-width: 300px;
-  margin: 2.5rem auto;
-  padding: 0 2rem;
+  margin: 6rem auto 1rem auto;
 
   .button-container {
-    flex-basis: 25%;
+    flex-basis: 10%;
     height: 100%;
     .add-button {
       background: none;
@@ -29,6 +28,7 @@ $mainGreen: #117722;
       position: relative;
       vertical-align: middle;
       font-weight: 700;
+      text-align: center;
 
       &::before,
       &::after {
@@ -56,10 +56,11 @@ $mainGreen: #117722;
 
       &:focus {
         color: $mainGreen;
+        text-align: center;
       }
       .check-mark {
         opacity: 0;
-        transition: opacity 0.5s ease-in 1s;
+        transition: opacity 0s;
       }
 
       &:focus::before,
@@ -70,6 +71,7 @@ $mainGreen: #117722;
 
       &:focus .check-mark {
         opacity: 1;
+        transition: opacity 0.5s ease-in 1s;
       }
       &:focus .btn-text {
         display: none;
@@ -80,7 +82,7 @@ $mainGreen: #117722;
         border-right-color: $mainGreen;
         border-radius: 25px;
         transition: width 0.25s ease-out, height 0.25s ease-out 0.25s,
-          border-radius 0.1s linear 1s;
+          border-radius 0.25s linear 1s;
       }
 
       &:focus::after {
@@ -88,14 +90,14 @@ $mainGreen: #117722;
         border-left-color: $mainGreen;
         border-radius: 25px;
         transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
-          height 0.25s ease-out 0.75s, border-radius 0.1s linear 1s;
+          height 0.25s ease-out 0.75s, border-radius 0.25s linear 1s;
       }
     }
   }
 
   .input-group {
     position: relative;
-    flex-basis: 70%;
+    flex-basis: 87%;
 
     .form-input {
       background: none;
