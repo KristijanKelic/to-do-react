@@ -1,28 +1,17 @@
 import { TasksActionTypes } from './tasks.types';
 
-const INITIAL_STATE = {
-  tasks: []
-};
+import { toggleFinishedUtil } from './tasks.utils';
+
+const INITIAL_STATE = [];
 
 const tasksReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case TasksActionTypes.ADD_TASK:
-      return {
-        ...state,
-        tasks: []
-      };
-    case TasksActionTypes.MARK_TASK_FINISHED:
-      return {
-        ...state
-      };
-    case TasksActionTypes.UNMARK_TASK_FINISHED:
-      return {
-        ...state
-      };
-    case TasksActionTypes.DELETE_FINISHED_TASK:
-      return {
-        ...state
-      };
+      return [action.payload, ...state];
+    case TasksActionTypes.TOGGLE_FINISHED:
+      return toggleFinishedUtil(action.payload, state);
+    case TasksActionTypes.DELETE_TASK:
+      return state.splice(state.indexOf(action.payload), 1);
     default:
       return state;
   }

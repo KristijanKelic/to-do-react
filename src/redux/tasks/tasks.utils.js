@@ -1,26 +1,9 @@
-export const addTaskUtil = (task, tasks) => {
-  tasks = [task, ...tasks];
+export const toggleFinishedUtil = (task, tasks) => {
+  const i = tasks.indexOf(task);
+  console.log(task);
+  console.log(i);
+  // setting finished prop to opposite of previous (done, undone) task!
+  task.finished = !task.finished;
+  tasks[i] = task;
   return tasks;
-};
-
-export const markTaskFinishedUtil = (task, tasks, finished) => {
-  tasks = tasks.filter(el => el.id !== task.id);
-  task.finishedAt = new Date();
-  finished = [task, ...finished];
-
-  return {
-    tasks,
-    finished
-  };
-};
-
-export const markTaskUnfinishedUtil = (task, tasks, finished) => {
-  finished = finished.filter(el => el.id !== task.id);
-  task.finishedAt = '';
-  tasks = [task, ...tasks];
-
-  return {
-    tasks,
-    finished
-  };
 };

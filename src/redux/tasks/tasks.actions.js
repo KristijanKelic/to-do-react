@@ -5,16 +5,11 @@ export const addTask = task => ({
   payload: task
 });
 
-export const markDone = task => ({
-  type: TasksActionTypes.MARK_TASK_FINISHED,
+export const toggleFinished = task => ({
+  type: TasksActionTypes.TOGGLE_FINISHED,
   payload: task
 });
 
-export const markUndone = task => ({
-  type: TasksActionTypes.UNMARK_TASK_FINISHED,
-  payload: task
-});
-
-export const deleteFinishedTask = () => ({
-  type: TasksActionTypes.DELETE_FINISHED_TASK
+export const deleteTask = () => ({
+  type: TasksActionTypes.DELETE_TASK
 });

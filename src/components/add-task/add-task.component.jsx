@@ -16,7 +16,8 @@ const AddTask = ({ addTask }) => {
     const taskObj = {
       id: generateUniqueId(),
       task,
-      createdAt: new Date()
+      createdAt: new Date(),
+      finished: false
     };
     setTask('');
     addTask(taskObj);
