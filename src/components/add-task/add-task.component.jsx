@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { connect } from 'react-redux';
-import generateUniqueId from 'generate-unique-id';
+import React, { useState } from "react";
+import { connect } from "react-redux";
+import generateUniqueId from "generate-unique-id";
 
-import { addTask } from '../../redux/tasks/tasks.actions';
+import { addTask } from "../../redux/tasks/tasks.actions";
 
-import './add-task.styles.scss';
+import "./add-task.styles.scss";
 
 const AddTask = ({ addTask }) => {
-  const [task, setTask] = useState('');
+  const [task, setTask] = useState("");
   const handleSubmit = e => {
     e.preventDefault();
-    if (task.trim() === '') {
+    if (task.trim() === "") {
       return;
     }
     const taskObj = {
@@ -18,9 +18,9 @@ const AddTask = ({ addTask }) => {
       task,
       createdAt: new Date(),
       finished: false,
-      finishedAt: ''
+      finishedAt: ""
     };
-    setTask('');
+    setTask("");
     addTask(taskObj);
     btnRef.current.focus();
   };
@@ -45,10 +45,10 @@ const AddTask = ({ addTask }) => {
           />
           <label
             className={
-              task.length > 0 ? 'form-input-label shrink' : 'form-input-label'
+              task.length > 0 ? "form-input-label shrink" : "form-input-label"
             }
           >
-            Something important to do
+            Task to do
           </label>
         </div>
         <div className="button-container">
