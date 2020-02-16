@@ -17,11 +17,15 @@ const AddTask = ({ addTask }) => {
       id: generateUniqueId(),
       task,
       createdAt: new Date(),
-      finished: false
+      finished: false,
+      finishedAt: ''
     };
     setTask('');
     addTask(taskObj);
+    btnRef.current.focus();
   };
+
+  const btnRef = React.createRef();
 
   const handleChange = e => {
     setTask(e.target.value);
@@ -44,11 +48,11 @@ const AddTask = ({ addTask }) => {
               task.length > 0 ? 'form-input-label shrink' : 'form-input-label'
             }
           >
-            Task
+            Something important to do
           </label>
         </div>
         <div className="button-container">
-          <button type="submit" className="add-button draw-border">
+          <button type="submit" className="add-button draw-border" ref={btnRef}>
             <span className="check-mark">&#x2713;</span>
             <span className="btn-text">Add</span>
           </button>

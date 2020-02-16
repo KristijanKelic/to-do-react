@@ -1,33 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { CSSTransitionGroup } from 'react-transition-group';
-
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Task from '../task/task.component';
 
 import './tasks.styles.scss';
 
-const Tasks = ({ tasks, toggleFinished }) => {
+const Tasks = ({ tasks }) => {
   return (
     <div className="tasks-container">
-      <CSSTransitionGroup
-        transitionName={{
-          enter: 'task-enter',
-          enterActive: 'task-enter-active',
-          leave: 'task-leave',
-          leaveActive: 'task-leave-active'
-        }}
-        transitionEnterTimeout={0}
-        transitionLeaveTimeout={0}
-      >
+      <TransitionGroup>
         {tasks.map(el => (
-          <Task task={el} key={el.id} onClick={() => toggleFinished(el)} />
+          <CSSTransition classNames="anim-task" key={el.id} timeout={500}>
+            <Task task={el} />
+          </CSSTransition>
         ))}
-      </CSSTransitionGroup>
+      </TransitionGroup>
     </div>
   );
 };
 
-const mapStateToProps = ({ tasks }) => ({
+const mapStateToProps = ({ tasks: { tasks } }) => ({
   tasks
 });
 

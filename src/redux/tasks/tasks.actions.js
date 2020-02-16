@@ -13,3 +13,7 @@ export const toggleFinished = task => ({
 export const deleteTask = () => ({
   type: TasksActionTypes.DELETE_TASK
 });
+
+export const deleteAllFinishedTasks = () => ({
+  type: TasksActionTypes.DELETE_ALL_FINISHED_TASKS
+});
