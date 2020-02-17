@@ -1,4 +1,4 @@
-$mainGreen: #117722;
+$mainColor: #240614;
 
 .task-container {
   position: relative;
@@ -9,10 +9,10 @@ $mainGreen: #117722;
   height: 64px;
   border-bottom: 1px solid #ccc;
   box-shadow: 0 0 27px #ccc;
+  margin-bottom: 20px;
 
   .task {
     width: 100%;
-    color: #1c1c1c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +90,7 @@ $mainGreen: #117722;
 
     &::after {
       content: "✓";
-      color: $mainGreen;
+      color: $mainColor;
       position: absolute;
       top: 0;
       left: 2px;
@@ -111,7 +111,7 @@ $mainGreen: #117722;
       right: -2px;
       bottom: 0;
       border-radius: 50%;
-      border: 5px dotted #117722;
+      border: 5px dotted $mainColor;
       transform: scale(0) rotate(0);
       transition: 0.5s;
       transition-delay: 0.3s;
@@ -130,21 +130,21 @@ $mainGreen: #117722;
     }
 
     & span.internal-one::after {
-      border-top-color: $mainGreen !important;
+      border-top-color: $mainColor !important;
       transition: 0.4s;
     }
     & span.internal-one::before {
-      border-left-color: $mainGreen !important;
+      border-left-color: $mainColor !important;
       transition: 0.3s;
       transition-delay: 0.1s;
     }
     & span.internal-two::after {
-      border-bottom-color: $mainGreen !important;
+      border-bottom-color: $mainColor !important;
       transition: 0.2s;
       transition-delay: 0.2s;
     }
     & span.internal-two::before {
-      border-right-color: $mainGreen !important;
+      border-right-color: $mainColor !important;
       transition: 0.1s;
       transition-delay: 0.3s;
     }
@@ -163,9 +163,10 @@ $mainGreen: #117722;
     width: calc(100% - 40px);
     height: 100%;
     position: relative;
-    color: #333;
     font-size: 0.85rem;
     word-wrap: break-word;
+    color: $mainColor;
+    font-family: "Michroma", Regular;
 
     &:after {
       content: "";
@@ -173,7 +174,7 @@ $mainGreen: #117722;
       top: 50%;
       height: 2px;
       width: 0;
-      background-image: linear-gradient(90deg, #116622, rgb(209, 40, 82));
+      background-image: linear-gradient(90deg, $mainColor, rgb(209, 40, 82));
       left: -5px;
       z-index: 2;
       transition: 0.3s;

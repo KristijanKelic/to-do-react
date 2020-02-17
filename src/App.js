@@ -1,17 +1,20 @@
-import React from 'react';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-import Header from './components/header/header.component';
-import AddTask from './components/add-task/add-task.component';
-import Tasks from './components/tasks/tasks.component';
+import Header from "./components/header/header.component";
+import Tasks from "./components/tasks/tasks.component";
+import FinishedTasks from "./components/finished-tasks/finished-tasks.component";
 
-import './App.scss';
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <AddTask />
-      <Tasks />
+      <Switch>
+        <Route path="/" exact component={Tasks} />
+        <Route path="/finished" component={FinishedTasks} />
+      </Switch>
     </div>
   );
 }
