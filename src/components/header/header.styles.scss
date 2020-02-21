@@ -2,13 +2,15 @@
   display: flex;
   width: 100%;
   height: 4.375rem;
-  background-color: #240614;
+  background-color: green;
   align-items: center;
   justify-content: space-between;
   padding: env(safe-area-inset-top, 1rem);
   position: absolute;
   top: 0;
   right: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 
   @media screen and (max-width: 768px) {
     justify-content: center;
@@ -35,7 +37,16 @@
     color: white;
     padding-right: 20px;
 
+    & li:last-child {
+      margin-left: 10px;
+    }
+
     & li {
+      height: 100%;
+      width: 100%;
+    }
+
+    & a {
       flex-basis: 50%;
       width: 100%;
       height: 100%;
@@ -47,7 +58,7 @@
       position: relative;
     }
 
-    & li:after {
+    & a:after {
       position: absolute;
       content: "";
       display: block;
@@ -57,10 +68,14 @@
       height: 2.5px;
       background-color: white;
       transition: width 200ms linear;
-      z-index: 1000;
+      z-index: 10;
     }
 
-    & li:hover::after {
+    & a:hover::after {
+      width: 100%;
+    }
+
+    & a.active::after {
       width: 100%;
     }
 

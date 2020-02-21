@@ -12,11 +12,13 @@ const Tasks = ({ tasks }) => {
     <div className="tasks-container">
       <AddTask />
       <TransitionGroup>
-        {tasks.map(el => (
-          <CSSTransition classNames="anim-task" key={el.id} timeout={1300}>
-            <Task task={el} />
-          </CSSTransition>
-        ))}
+        {tasks
+          .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+          .map(el => (
+            <CSSTransition classNames="anim-task" key={el.id} timeout={1300}>
+              <Task task={el} />
+            </CSSTransition>
+          ))}
       </TransitionGroup>
     </div>
   );

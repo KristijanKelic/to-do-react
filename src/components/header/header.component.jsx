@@ -9,10 +9,14 @@ const Header = () => {
       <h4 className="title">TO DO</h4>
       <ul className="nav-links">
         <li>
-          <NavLink to="/" exact>To do</NavLink>
+          <NavLink to="/" exact activeClassName="active">
+            To do
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/finished">Finished</NavLink>
+          <NavLink to="/finished" activeClassName="active">
+            Finished
+          </NavLink>
         </li>
       </ul>
     </div>

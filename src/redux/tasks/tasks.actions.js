@@ -1,4 +1,4 @@
-import { TasksActionTypes } from './tasks.types';
+import { TasksActionTypes } from "./tasks.types";
 
 export const addTask = task => ({
   type: TasksActionTypes.ADD_TASK,
@@ -10,8 +10,9 @@ export const toggleFinished = task => ({
   payload: task
 });
 
-export const deleteTask = () => ({
-  type: TasksActionTypes.DELETE_TASK
+export const deleteTask = taskId => ({
+  type: TasksActionTypes.DELETE_TASK,
+  payload: taskId
 });
 
 export const deleteAllFinishedTasks = () => ({

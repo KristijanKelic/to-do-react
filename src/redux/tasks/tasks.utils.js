@@ -9,7 +9,7 @@ export const toggleFinishedUtil = (tasks, finished, task) => {
   } else {
     let newFinished = finished.filter(el => el.id !== task.id);
     task.finished = false;
-    task.finishedAt = '';
+    task.finishedAt = "";
     tasks = [task, ...tasks];
     finished = newFinished;
   }

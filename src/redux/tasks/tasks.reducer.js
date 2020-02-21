@@ -1,6 +1,6 @@
-import { TasksActionTypes } from './tasks.types';
+import { TasksActionTypes } from "./tasks.types";
 
-import { toggleFinishedUtil } from './tasks.utils';
+import { toggleFinishedUtil } from "./tasks.utils";
 
 const INITIAL_STATE = {
   tasks: [],
@@ -17,7 +17,10 @@ const tasksReducer = (state = INITIAL_STATE, action) => {
     case TasksActionTypes.TOGGLE_FINISHED:
       return toggleFinishedUtil(state.tasks, state.finished, action.payload);
     case TasksActionTypes.DELETE_TASK:
-      return state.splice(state.indexOf(action.payload), 1);
+      return {
+        ...state,
+        tasks: state.tasks.filter(el => el.id !== action.payload)
+      };
     case TasksActionTypes.DELETE_ALL_FINISHED_TASKS:
       return {
         ...state,
