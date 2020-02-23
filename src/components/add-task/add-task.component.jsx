@@ -31,7 +31,7 @@ const AddTask = ({ addTask }) => {
     setTask(e.target.value);
   };
   return (
-    <>
+    <div className="add-task-container">
       <form className="add-task-form" onSubmit={handleSubmit}>
         <div className="input-group">
           <input
@@ -48,7 +48,7 @@ const AddTask = ({ addTask }) => {
               task.length > 0 ? "form-input-label shrink" : "form-input-label"
             }
           >
-            Task to do
+            Type here..
           </label>
         </div>
         <div className="button-container">
@@ -58,7 +58,7 @@ const AddTask = ({ addTask }) => {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 

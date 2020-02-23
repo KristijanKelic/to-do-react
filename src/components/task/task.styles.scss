@@ -12,13 +12,23 @@ $mainColor: green;
   margin-bottom: 20px;
   position: relative;
   border-radius: 10px;
+  border-left: 4px solid green;
 
   .timestamp {
     position: absolute;
-    bottom: 0;
-    right: 70px;
     font-size: 8px;
     font-family: "Michroma", Regular;
+
+    &.c {
+      top: 0px;
+      right: 5px;
+    }
+
+    &.f {
+      bottom: 0px;
+      right: 5px;
+      color: green;
+    }
   }
 
   & .task {
@@ -215,6 +225,7 @@ $mainColor: green;
     align-items: center;
     height: 50%;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   & .delete .icon {
@@ -245,7 +256,9 @@ $mainColor: green;
   & .dialog-message {
     font-family: "Michroma", Regular;
     font-size: 20px;
-    margin-bottom: 80px;
+    margin: 0px auto 80px auto;
+    width: 80%;
+    text-align: center;
   }
   & .btn-yes {
     font-family: "Michroma", Regular;

@@ -2,6 +2,16 @@
   max-width: 800px;
   min-width: 300px;
   margin: 0 auto;
+  margin-top: 5rem;
+
+  & .tasks-headline {
+    font-family: "Michroma", regular;
+    color: green;
+    font-size: 20px;
+    margin-left: 10px;
+    border-bottom: 1px solid green;
+    padding-bottom: 10px;
+  }
 }
 
 .anim-task-enter {

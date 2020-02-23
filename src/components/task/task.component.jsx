@@ -13,11 +13,20 @@ const Task = ({ task, toggleFinished, deleteTask }) => {
   return (
     <div className="task-container">
       <label>
-        <input
-          type="checkbox"
-          className="hidden-real-check"
-          onClick={() => toggleFinished(task)}
-        />
+        {task.finished ? (
+          <input
+            type="checkbox"
+            className="hidden-real-check"
+            checked
+            readOnly
+          />
+        ) : (
+          <input
+            type="checkbox"
+            className="hidden-real-check"
+            onClick={() => toggleFinished(task)}
+          />
+        )}
         <div className="task">
           <span className="custom-check">
             <span className="checkbox">
@@ -38,7 +47,8 @@ const Task = ({ task, toggleFinished, deleteTask }) => {
                   <div className="dialog">
                     <h3 className="dialog-title">Delete task</h3>
                     <p className="dialog-message">
-                      Are you sure you want to delete this task?
+                      Are you sure you want to delete <br />
+                      <span style={{ color: "green" }}>{task.task}</span> ?
                     </p>
                     <div className="dialog-buttons">
                       <button
@@ -61,9 +71,14 @@ const Task = ({ task, toggleFinished, deleteTask }) => {
           }
         />
       </div>
-      <span className="timestamp">
-        created - {new Date(task.createdAt).toLocaleDateString()}
+      <span className="timestamp c">
+        Created ({new Date(task.createdAt).toLocaleDateString()})
       </span>
+      {task.finished ? (
+        <span className="timestamp f">
+          Finished ({new Date(task.createdAt).toLocaleDateString()})
+        </span>
+      ) : null}
     </div>
   );
 };

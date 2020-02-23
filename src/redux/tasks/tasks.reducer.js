@@ -19,7 +19,8 @@ const tasksReducer = (state = INITIAL_STATE, action) => {
     case TasksActionTypes.DELETE_TASK:
       return {
         ...state,
-        tasks: state.tasks.filter(el => el.id !== action.payload)
+        tasks: state.tasks.filter(el => el.id !== action.payload),
+        finished: state.finished.filter(el => el.id !== action.payload)
       };
     case TasksActionTypes.DELETE_ALL_FINISHED_TASKS:
       return {

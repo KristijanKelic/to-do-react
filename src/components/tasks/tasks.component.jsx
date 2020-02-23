@@ -11,6 +11,12 @@ const Tasks = ({ tasks }) => {
   return (
     <div className="tasks-container">
       <AddTask />
+      <h1 className="tasks-headline">
+        <span role="img" aria-label="pin-emoji">
+          &#x1F4CC;
+        </span>
+        / Tasks - [ {tasks.length} ]
+      </h1>
       <TransitionGroup>
         {tasks
           .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))

@@ -1,0 +1,31 @@
+.finished-container {
+  max-width: 800px;
+  min-width: 300px;
+  margin: 0 auto;
+  margin-top: 7rem;
+
+  & .finished-headline {
+    font-family: "Michroma", regular;
+    color: green;
+    font-size: 20px;
+    margin-left: 10px;
+    border-bottom: 1px solid green;
+    padding-bottom: 10px;
+  }
+}
+
+.anim-task-exit {
+  opacity: 1;
+  transform: translate(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition-property: transform, opacity;
+  transition-duration: 1000ms;
+  transition-delay: 1000ms;
+  transition-timing-function: cubic-bezier(0.175, 0.665, 0.32, 1), linear;
+}
+
+.anim-task-exit-active {
+  opacity: 0;
+  transform: translate(1000px, 0);
+  transform: translate3d(1000px, 0, 0);
+}
