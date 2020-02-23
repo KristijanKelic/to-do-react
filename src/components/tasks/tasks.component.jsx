@@ -5,6 +5,8 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 import AddTask from "../add-task/add-task.component";
 import Task from "../task/task.component";
 
+import { ReactComponent as Free } from "../../assets/sun-umbrella.svg";
+
 import "./tasks.styles.scss";
 
 const Tasks = ({ tasks }) => {
@@ -26,6 +28,15 @@ const Tasks = ({ tasks }) => {
             </CSSTransition>
           ))}
       </TransitionGroup>
+      <div className={tasks.length === 0 ? "no-tasks anim" : "no-tasks"}>
+        <Free />
+        <p>
+          You are all done
+          <span role="img" aria-label="emoji-with-sunglasses">
+            &#128526;
+          </span>
+        </p>
+      </div>
     </div>
   );
 };
