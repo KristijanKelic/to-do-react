@@ -20,7 +20,7 @@
   ],
   "start_url": "./index.html",
   "display": "fullscreen",
-  "theme_color": "#000000",
+  "theme_color": "#117722",
   "background_color": "#1c1c1c",
   "orientation": "portrait",
   "prefer_related_applications": false

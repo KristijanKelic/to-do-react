@@ -1,32 +1,27 @@
 {
   "files": {
-    "main.css": "/to-do-react/static/css/main.8702bd9e.chunk.css",
-    "main.js": "/to-do-react/static/js/main.3554b954.chunk.js",
-    "main.js.map": "/to-do-react/static/js/main.3554b954.chunk.js.map",
+    "main.css": "/to-do-react/static/css/main.990babcb.chunk.css",
+    "main.js": "/to-do-react/static/js/main.f93aacb2.chunk.js",
+    "main.js.map": "/to-do-react/static/js/main.f93aacb2.chunk.js.map",
     "runtime-main.js": "/to-do-react/static/js/runtime-main.2140ce8d.js",
     "runtime-main.js.map": "/to-do-react/static/js/runtime-main.2140ce8d.js.map",
     "static/css/2.627926fe.chunk.css": "/to-do-react/static/css/2.627926fe.chunk.css",
-    "static/js/2.7876de0d.chunk.js": "/to-do-react/static/js/2.7876de0d.chunk.js",
-    "static/js/2.7876de0d.chunk.js.map": "/to-do-react/static/js/2.7876de0d.chunk.js.map",
+    "static/js/2.a4c0084b.chunk.js": "/to-do-react/static/js/2.a4c0084b.chunk.js",
+    "static/js/2.a4c0084b.chunk.js.map": "/to-do-react/static/js/2.a4c0084b.chunk.js.map",
     "index.html": "/to-do-react/index.html",
-    "precache-manifest.acb8476a3258ed24cb0f826be08ba12a.js": "/to-do-react/precache-manifest.acb8476a3258ed24cb0f826be08ba12a.js",
+    "precache-manifest.8dfa44f2a5f7b3155f73eb38622f9c78.js": "/to-do-react/precache-manifest.8dfa44f2a5f7b3155f73eb38622f9c78.js",
     "service-worker.js": "/to-do-react/service-worker.js",
     "static/css/2.627926fe.chunk.css.map": "/to-do-react/static/css/2.627926fe.chunk.css.map",
-    "static/css/main.8702bd9e.chunk.css.map": "/to-do-react/static/css/main.8702bd9e.chunk.css.map",
-    "static/js/2.7876de0d.chunk.js.LICENSE": "/to-do-react/static/js/2.7876de0d.chunk.js.LICENSE",
-    "static/media/add.79404ac4.svg": "/to-do-react/static/media/add.79404ac4.svg",
-    "static/media/delete.4b8e8690.svg": "/to-do-react/static/media/delete.4b8e8690.svg",
-    "static/media/down-arrow.9aef94ce.svg": "/to-do-react/static/media/down-arrow.9aef94ce.svg",
-    "static/media/list.65521e7a.svg": "/to-do-react/static/media/list.65521e7a.svg",
-    "static/media/tick.c0cbd084.svg": "/to-do-react/static/media/tick.c0cbd084.svg",
-    "static/media/to-do-list.b5fa2cbc.svg": "/to-do-react/static/media/to-do-list.b5fa2cbc.svg",
-    "static/media/undo.870a5694.svg": "/to-do-react/static/media/undo.870a5694.svg"
+    "static/css/main.990babcb.chunk.css.map": "/to-do-react/static/css/main.990babcb.chunk.css.map",
+    "static/js/2.a4c0084b.chunk.js.LICENSE": "/to-do-react/static/js/2.a4c0084b.chunk.js.LICENSE",
+    "static/media/index.css": "/to-do-react/static/media/Michroma-Regular.f84355b0.ttf",
+    "static/media/delete.4b8e8690.svg": "/to-do-react/static/media/delete.4b8e8690.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2140ce8d.js",
     "static/css/2.627926fe.chunk.css",
-    "static/js/2.7876de0d.chunk.js",
-    "static/css/main.8702bd9e.chunk.css",
-    "static/js/main.3554b954.chunk.js"
+    "static/js/2.a4c0084b.chunk.js",
+    "static/css/main.990babcb.chunk.css",
+    "static/js/main.f93aacb2.chunk.js"
   ]
 }
