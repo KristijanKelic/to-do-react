@@ -5,6 +5,7 @@ import Header from "./components/header/header.component";
 import Tasks from "./components/tasks/tasks.component";
 import FinishedTasks from "./components/finished-tasks/finished-tasks.component";
 import PageNotFound from "./components/not-found/not-found.component";
+import BottomNav from "./components/bottom-nav/bottom-nav.component";
 
 import "./App.scss";
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/finished" exact component={FinishedTasks} />
         <Route path="*" component={PageNotFound} />
       </Switch>
+      {window.innerWidth < 770 ? <BottomNav /> : null}
     </div>
   );
 }

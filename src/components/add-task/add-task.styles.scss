@@ -1,4 +1,4 @@
-$mainColor: green;
+$mainColor: #4CAF50;
 
 @mixin shrinkLabel {
   top: 5px;
@@ -7,7 +7,6 @@ $mainColor: green;
 }
 
 .add-task-container {
-  box-shadow: 0 0 27px #ccc;
   padding: 0px 40px 0px 40px;
   border-radius: 5px;
   margin-bottom: 50px;
@@ -20,6 +19,8 @@ $mainColor: green;
     max-width: 800px;
     min-width: 300px;
     margin: 6rem auto 1rem auto;
+    border-bottom: 1px solid $mainColor;
+
 
     .button-container {
       flex-basis: 10%;

@@ -51,9 +51,6 @@ const FinishedTasks = ({ finished, deleteAll }) => {
             })
           }
         >
-          <span role="img" aria-label="warning-emoji">
-            ⚠️
-          </span>
           Delete all
         </button>
       </div>
