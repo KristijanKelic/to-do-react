@@ -2,7 +2,8 @@
   max-width: 800px;
   min-width: 300px;
   margin: 0 auto;
-  margin-top: 5rem;
+  overflow: hidden;
+  margin-bottom: 100px;
 
   & .tasks-headline {
     font-family: "Michroma", regular;
