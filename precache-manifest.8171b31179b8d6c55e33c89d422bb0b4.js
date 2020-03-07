@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b9d6736f49b90f169403e45eb5381504",
+    "revision": "dc5333b7b5021d78066ca44fa787a484",
     "url": "/to-do-react/index.html"
   },
   {
-    "revision": "1a327fcc8de91753ea35",
-    "url": "/to-do-react/static/css/main.f7f4f09d.chunk.css"
+    "revision": "110a1843fe370f43b014",
+    "url": "/to-do-react/static/css/main.37bdf706.chunk.css"
   },
   {
-    "revision": "a2fa19efd73ec204c6ad",
-    "url": "/to-do-react/static/js/2.0984c3e7.chunk.js"
+    "revision": "3ece6e3a6bcbbc5ffe45",
+    "url": "/to-do-react/static/js/2.6c39efbd.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/to-do-react/static/js/2.0984c3e7.chunk.js.LICENSE"
+    "url": "/to-do-react/static/js/2.6c39efbd.chunk.js.LICENSE"
   },
   {
-    "revision": "1a327fcc8de91753ea35",
-    "url": "/to-do-react/static/js/main.cb8ecc73.chunk.js"
+    "revision": "110a1843fe370f43b014",
+    "url": "/to-do-react/static/js/main.b71fa19a.chunk.js"
   },
   {
     "revision": "1e161adf563a704d7b53",
@@ -52,10 +52,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/to-do-react/static/media/delete.4b8e8690.svg"
   },
   {
-    "revision": "6ee9c10aaff84ff9465ed66f5dcd139b",
-    "url": "/to-do-react/static/media/finished.6ee9c10a.svg"
-  },
-  {
     "revision": "45b5af622693058806ce0f0750e64028",
     "url": "/to-do-react/static/media/note.45b5af62.svg"
   },
@@ -64,7 +60,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/to-do-react/static/media/sun-umbrella.bd810bea.svg"
   },
   {
-    "revision": "edec4e2860ea9514b77cb2815f0636aa",
-    "url": "/to-do-react/static/media/todo.edec4e28.svg"
+    "revision": "ef2d4a818b11e49ae8948ee533bb9afc",
+    "url": "/to-do-react/static/media/tick.ef2d4a81.svg"
   }
 ]);
